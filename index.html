@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css" />
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    </head>
+    <body>
+      <h1>JavaScript Calculator</h1>
+      <div id="calc">
+        <form>
+          <input type="text" id="display" disabled>
+          <br>
+          <!-- All buttons are going to have to same "keys" id -->
+          <input type="button" value="C" id="keys" onclick="addtoScreen('C')">
+          <input type="button" value="CE" id="keys" onclick="backspace()">
+          <input type="button" value="X^2" id="keys" onclick="power()">
+          <input type="button" value="+" id="keys" onclick="addtoScreen('+')">
+      <br>
+      <input type="button" value="9" id="keys" onclick="addtoScreen('9')">
+      <input type="button" value="8" id="keys" onclick="addtoScreen('8')">
+      <input type="button" value="7" id="keys" onclick="addtoScreen('7')">
+      <input type="button" value="-" id="keys" onclick="addtoScreen('-')">
+      <br>
+      <input type="button" value="6" id="keys" onclick="addtoScreen('6')">
+      <input type="button" value="5" id="keys" onclick="addtoScreen('5')">
+      <input type="button" value="4" id="keys" onclick="addtoScreen('4')">
+      <input type="button" value="*" id="keys" onclick="addtoScreen('*')">
+      <br>
+      <input type="button" value="3" id="keys" onclick="addtoScreen('3')">
+      <input type="button" value="2" id="keys" onclick="addtoScreen('2')">
+      <input type="button" value="1" id="keys" onclick="addtoScreen('1')">
+      <input type="button" value="/" id="keys" onclick="addtoScreen('/')">
+      <br>
+      <input type="button" value="0" id="keys" onclick="addtoScreen('0')">
+      <input type="button" value="." id="keys" onclick="addtoScreen('.')">
+      <input type="button" value="=" id="equal" onclick="answer()">
+    </form>
+    <h3>JS Calculator</h3>
+  </div>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
